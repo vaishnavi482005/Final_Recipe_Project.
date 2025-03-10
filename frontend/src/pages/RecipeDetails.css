@@ -1,0 +1,112 @@
+/* Recipe Details Container */
+.recipe-details-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  flex-direction: column; /* Ensures elements stack properly */
+  min-height: 100vh; /* Ensures full-page centering */
+  padding: 20px;
+}
+
+/* Back Button */
+.recipe-details-container button {
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 15px; /* Adds spacing */
+}
+
+/* Recipe Card */
+.recipe-details-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  max-width: 750px; /* Wider width */
+  width: 100%;
+}
+
+.recipe-details-card:hover {
+  transform: scale(1.02);
+}
+
+/* Recipe Image */
+.recipe-details-card img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Recipe Title */
+.recipe-details-card .card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Ingredients & Steps */
+.ingredients-list,
+.steps-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.ingredients-list li,
+.steps-list li {
+  background: #f8f9fa;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Recipe Actions */
+.recipe-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Centers buttons */
+  gap: 10px;
+}
+
+.recipe-actions button {
+  font-size: 1.1rem;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.recipe-actions .btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.recipe-actions .btn-outline-success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recipe-details-container {
+    padding: 15px;
+  }
+
+  .recipe-details-card {
+    max-width: 95%; /* Ensures proper width on smaller screens */
+  }
+
+  .recipe-details-card .card-title {
+    font-size: 1.5rem;
+  }
+
+  .recipe-details-card img {
+    max-height: 300px;
+  }
+}

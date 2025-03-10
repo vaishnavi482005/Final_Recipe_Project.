@@ -1,0 +1,30 @@
+.share-recipe-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.share-recipe-card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.share-recipe-container h2 {
+  text-align: center;
+  color: #28a745;
+}
+
+.share-recipe-container .form-control {
+  border-radius: 8px;
+}
+
+.share-recipe-container button {
+  background-color: #28a745;
+  border: none;
+}
+
+.share-recipe-container button:hover {
+  background-color: #218838;
+}
